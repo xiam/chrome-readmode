@@ -18,10 +18,14 @@ body.reader .hidden {
 }
 
 body.reader {
-  padding: 2%;
+  padding: 4%;
   margin: 0px;
   color: #333;
-  background: #fefefe;
+  /*
+  Exclusive looking paper pattern with small dust particles and 45 degree strokes.
+  Made by Atle Mo
+  */
+  background: #fefefe url('http://static.hckr.org/patterns/exclusive_paper.png');
   font-family: 'Rosarivo', serif;
   font-size: 12pt;
 }
@@ -52,6 +56,7 @@ body.reader h6, body.reader h6 a {
 
 body.reader p {
   font-size: 1.2em;
+  text-align: justify;
 }
 
 body.reader h1 {
