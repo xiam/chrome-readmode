@@ -1,7 +1,7 @@
 {
   "name": "Read Mode",
   "manifest_version": 2,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "background": {
     "scripts": [
       "json2.js",
