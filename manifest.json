@@ -1,14 +1,14 @@
 {
-  "name": "Reader",
+  "name": "Read Mode",
   "manifest_version": 2,
-  "version": "1.0",
+  "version": "1.0.3",
   "background": {
     "scripts": [
       "json2.js",
       "background.js"
     ]  
   },
-  "description": "Styling old pages for appropriate reading.",
+  "description": "Puts Google Chrome into read mode for a pleasant reading experience.",
   "content_scripts": [
     {
       "all_frames": true,
@@ -26,7 +26,7 @@
    },
   "page_action": {
     "default_icon": "icon-enabled.png",
-    "default_title": "Turn reader on."
+    "default_title": "Toggle Read Mode."
   },
   "permissions": [ "tabs", "http://*/*", "https://*/*" ]
 }
