@@ -1,0 +1,95 @@
+
+@font-face {
+  font-family: 'Rosarivo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rosarivo'), local('Rosarivo-Regular'), url('http://themes.googleusercontent.com/static/fonts/rosarivo/v1/OGdIq-p0tOtBN2VMVvO9W_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inconsolata'), url('http://themes.googleusercontent.com/static/fonts/inconsolata/v5/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+}
+
+body.reader {
+  padding: 2%;
+  margin: 0px;
+  color: #333;
+  background: #fefefe;
+  font-family: 'Rosarivo', serif;
+  font-size: 12pt;
+}
+
+body.reader h1 img,
+body.reader h2 img,
+body.reader h3 img,
+body.reader h4 img,
+body.reader h5 img,
+body.reader h6 img {
+  display: none;
+}
+
+body.reader table, body.reader td, body.reader tr, body.reader img {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body.reader h1, body.reader h1 a,
+body.reader h2, body.reader h2 a,
+body.reader h3, body.reader h3 a,
+body.reader h4, body.reader h4 a,
+body.reader h5, body.reader h5 a,
+body.reader h6, body.reader h6 a {
+  color: #000 !important;
+}
+
+body.reader p {
+  font-size: 1.2em;
+}
+
+body.reader h1 {
+  font-size: 2.2em;
+  text-align: center;
+}
+
+body.reader h2 {
+  font-size: 2.0em;
+}
+
+body.reader h3 {
+  font-size: 1.8em;
+}
+
+body.reader h4 {
+  font-size: 1.6em;
+}
+
+body.reader h5 {
+  font-size: 1.4em;
+}
+
+body.reader h6 {
+  font-size: 1.2em;
+}
+
+body.reader pre, body.reader tt, body.reader code {
+  font-family: Inconsolata, monospace;
+  color: #000;
+}
+
+body.reader a,
+body.reader a:hover,
+body.reader a:active,
+body.reader a:visited,
+body.reader a:link {
+  color: #00509C;
+  text-decoration: none;
+}
+
+body.reader a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
