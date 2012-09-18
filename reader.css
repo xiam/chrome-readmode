@@ -18,31 +18,94 @@ body.reader .hidden {
 }
 
 body.reader {
-  padding: 4%;
+  padding: 1%;
   margin: 0px;
   color: #333;
   /*
   Exclusive looking paper pattern with small dust particles and 45 degree strokes.
   Made by Atle Mo
   */
+/*  
   background: #fefefe url('http://static.hckr.org/patterns/exclusive_paper.png');
-  font-family: 'Rosarivo', serif;
+*/
+  background: rgba(0, 0, 0, .5);
+  font-family: 'Rosarivo', Georgia, serif;
   font-size: 12pt;
 }
+
+/*body.reader h1{
+  display: none;
+}*/
+
 
 body.reader h1 img,
 body.reader h2 img,
 body.reader h3 img,
 body.reader h4 img,
 body.reader h5 img,
-body.reader h6 img {
-  display: none;
+body.reader h6 img,
+
+body.reader *[class*="menu"],
+body.reader *[id*="menu"],
+body.reader *[class*="nav"],
+body.reader *[id*="nav"],
+body.reader *[class*="search"],
+body.reader *[id*="search"],
+
+body.reader *[id*="banner"],
+body.reader *[class*="banner"],
+body.reader *[id*="_ad"],
+body.reader *[class*="_ad"],
+body.reader *[id*="advertise"],
+body.reader *[class*="advertise"],
+body.reader *[id*="promo"],
+body.reader *[class*="promo"],
+body.reader *[id*="branding"],
+body.reader *[class*="branding"],
+
+body.reader *[id*="disscusion"],
+body.reader *[class*="disscusion"],
+body.reader *[id*="dialogue"],
+body.reader *[class*="dialogue"],
+
+body.reader *[id*="sidebar"],
+body.reader *[class*="sidebar"],
+body.reader *[id*="related"],
+body.reader *[class*="related"],
+
+body.reader *[id*="social"],
+body.reader *[class*="social"],
+body.reader *[id*="share"],
+body.reader *[class*="share"],
+body.reader *[id*="links"],
+body.reader *[class*="links"],
+body.reader .share-links,
+body.reader #share-links,
+
+body.reader *[id*="logo"],
+body.reader *[class*="logo"],
+body.reader *[id*="topics"],
+body.reader *[class*="topics"],
+body.reader *[id*="footer"],
+body.reader *[class*="footer"],
+body.reader *[id*="comment"],
+body.reader *[class*="comment"],
+body.reader #header,
+body.reader .header,
+
+body.reader .articleFeedback,
+body.reader .authorinfo.demobox,
+
+body.reader .noprint{
+  display: none!important;
 }
+
+
 
 body.reader table, body.reader td, body.reader tr, body.reader img {
   border: 0px;
   padding: 0px;
-  margin: 0px;
+  margin: 0 0 20px;
 }
 
 body.reader h1, body.reader h1 a,
@@ -54,38 +117,71 @@ body.reader h6, body.reader h6 a {
   color: #000 !important;
 }
 
-body.reader p {
-  font-size: 1.2em;
-  text-align: justify;
+body.reader p,
+body.reader blockquote,
+body.reader div{
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+body.reader h1, 
+body.reader h2,
+body.reader h3,
+body.reader h4,
+body.reader h5,
+body.reader h6{
+  margin: 0 0 1em;
+  padding: 2em 0 0;
+  line-height: 1.2em;
+  font-weight: normal;
+  clear: both;
+}
+body.reader *[class*="content"] h1,
+body.reader *[id*="content"] h1,
+body.reader *[id*="container"] h1,
+body.reader *[class*="container"] h1{
+  display: block;
+}
+body.reader h1:first-of-type,
+body.reader h1:first-of-type,
+body.reader h1:first-of-type,
+body.reader h1:first-of-type{
+  padding: .5em 0 0; 
 }
 
 body.reader h1 {
-  font-size: 2.2em;
-  text-align: center;
+  font-size: 2.4em;
 }
-
 body.reader h2 {
   font-size: 2.0em;
 }
-
 body.reader h3 {
-  font-size: 1.8em;
-}
-
-body.reader h4 {
   font-size: 1.6em;
 }
-
-body.reader h5 {
-  font-size: 1.4em;
-}
-
-body.reader h6 {
+body.reader h4 {
   font-size: 1.2em;
+}
+body.reader h5 {
+  font-size: 1em;
+}
+body.reader h6 {
+  font-size: .8em;
 }
 
 body.reader pre, body.reader tt, body.reader code {
   font-family: Inconsolata, monospace;
+  word-wrap: break-word;
+  background: rgb(248, 248, 228);
+  color: #333;
+  padding: 20px;
+}
+body.reader p code,
+body.reader dt code,
+body.reader dd code,
+body.reader li code{
+  padding: 0;
+  background: 0;
   color: #000;
 }
 
@@ -101,4 +197,51 @@ body.reader a:link {
 body.reader a:hover {
   color: #0066cc;
   text-decoration: underline;
+}
+
+body.reader #reader-wrap{
+  width: 80%;
+  max-width: 850px;
+  min-width: 640px;
+  padding: 40px 100px;
+  margin: auto;
+  background: #fcfcfc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+}
+body.reader .editsection{
+  font-size: 12px!important;
+  color: #00509C!important;
+  display: block;
+}
+body.reader .editsection a{
+  margin-right: 0px;
+  color: #00509C!important;
+}
+body.reader sup{
+  font-size: .5em;
+}
+body.reader dt{
+  font-weight: bold;
+}
+
+#reader-wrap article img,
+#reader-wrap *[id*="article"] img,
+#reader-wrap *[class*="article"] img,
+#reader-wrap *[id*="content"] img,
+#reader-wrap *[class*="content"] img,
+#reader-wrap *[id*="container"] img,
+#reader-wrap *[class*="container"] img{
+  float: left;
+  margin: 0 30px 20px 0!important;
+}
+#reader-wrap article + *,
+#reader-wrap article + * + *{
+  display: none;
+}
+
+body.reader .mw-body .ogg-player-options{
+  display: none;
+}
+body.reader img{
+  max-width: 100%;
 }

@@ -1,32 +1,29 @@
 {
-  "name": "Read Mode",
-  "manifest_version": 2,
-  "version": "1.0.4",
-  "background": {
-    "scripts": [
-      "json2.js",
-      "background.js"
-    ]  
-  },
-  "description": "Puts Google Chrome into read mode for a pleasant reading experience.",
-  "content_scripts": [
-    {
+   "background": {
+      "scripts": [ "json2.js", "background.js" ]
+   },
+   "content_scripts": [ {
       "all_frames": true,
-      "js": [ "reader.js" ],
       "css": [ "reader.css" ],
+      "js": [ "reader.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_start"
-    }
-  ],
+   } ],
+   "description": "Puts Google Chrome into read mode for a pleasant reading experience.",
    "icons": {
       "128": "icon-128.png",
       "16": "icon-16.png",
       "32": "icon-32.png",
       "48": "icon-48.png"
    },
-  "page_action": {
-    "default_icon": "icon-enabled.png",
-    "default_title": "Toggle Read Mode."
-  },
-  "permissions": [ "tabs", "http://*/*", "https://*/*" ]
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8roxVhN04z9cuvmWmekXAk06tlIk/Btfo091/Btp7OW3dXdzj7rYT6eznAn/7uQ3EhG3iprRgv/2rRpY8vpIbg2uVEGpCWCuMSWPvd6PTiivinNy6oLCRigbvqtA3pojlrszbuVjOep1v7F24IkF5geuwrivYqEy4befPpRBfTQIDAQAB",
+   "manifest_version": 2,
+   "name": "Read Mode",
+   "page_action": {
+      "default_icon": "icon-enabled.png",
+      "default_title": "Toggle Read Mode."
+   },
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.4"
 }
