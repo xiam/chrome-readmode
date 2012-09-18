@@ -36,6 +36,7 @@ function readerEnable() {
     cleaned = true;
 
     document.body.className = 'reader';
+    document.body.innerHTML = '<div id="reader-wrap">'+document.body.innerHTML+'</div>';
 
     removeElements(document.querySelectorAll('script'));
     removeElements(document.querySelectorAll('object'));
