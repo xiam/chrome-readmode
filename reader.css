@@ -9,14 +9,14 @@
   font-family: 'Rosarivo';
   font-style: normal;
   font-weight: 400;
-  src: local('Rosarivo'), local('Rosarivo-Regular'), url('http://themes.googleusercontent.com/static/fonts/rosarivo/v1/OGdIq-p0tOtBN2VMVvO9W_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
+  src: local('Rosarivo'), local('Rosarivo-Regular'), url('//themes.googleusercontent.com/static/fonts/rosarivo/v1/OGdIq-p0tOtBN2VMVvO9W_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: normal;
-  src: local('Inconsolata'), url('http://themes.googleusercontent.com/static/fonts/inconsolata/v5/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
+  src: local('Inconsolata'), url('//themes.googleusercontent.com/static/fonts/inconsolata/v5/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff') format('woff');
 }
 
 body.reader .hidden {
@@ -32,7 +32,7 @@ body.reader {
   Made by Atle Mo
   */
 /*
-  background: #fefefe url('http://static.hckr.org/patterns/exclusive_paper.png');
+  background: #fefefe url('//static.hckr.org/patterns/exclusive_paper.png');
 */
   background: rgba(0, 0, 0, .5);
   font-family: 'Rosarivo', Georgia, serif;
